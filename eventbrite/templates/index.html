@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- carousel -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+  <li data-target="#demo" data-slide-to="1"></li>
+  <li data-target="#demo" data-slide-to="2"></li>
+  <li data-target="#demo" data-slide-to="3"></li>
+</ul>
+
+<!-- The slideshow -->
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="static/Images/Index_pic.jpg" class="img-fluid" alt="Error404">
+  </div>
+  <div class="carousel-item">
+    <img src="static/Images/Index_pic2.jpg" class="img-fluid" alt="Error404">
+  </div>
+  <div class="carousel-item">
+    <img src="static/Images/Index_pic3.jpg" class="img-fluid" alt="Error404">
+  </div>
+  <div class="carousel-item">
+    <img src="static/Images/Index_pic4.jpg" class="img-fluid" alt="Error404">
+  </div>
+</div>
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+
+</div>
+
+<!-- The content -->
+  <div class="container thecontent">
+    <h1 class="theheading">Welcome To Eventbrite!</h1>
+    <p class="thepara">Eventbrite is an American event management and ticketing website. The service allows users to browse, create, and promote local events. The service charges a fee to event organizers in exchange for online ticketing services, unless the event is free. Launched in 2006 and headquartered in San Francisco, Eventbrite opened their first international office in the United Kingdom in 2012. The company has local offices in Nashville, London, Cork, Amsterdam, Dublin, Berlin, Melbourne, Mendoza, Madrid, and São Paulo. The company went public on the New York Stock Exchange on September 20, 2018 under the ticker symbol EB.</p>
+    <p class="thepara">(Source: Wikipedia)</p>
+  </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+.thelogo{
+  height: 20px;
+  width: auto;
+  margin: 7px;
+  margin-bottom: 13px;
+}
+
+#navbar{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 22px;
+  color: black;
+}
+
+.thecontent{
+  margin-top: 40px;
+}
+
+.theheading{
+  margin-bottom: 30px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+
+.theh2{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 26px;
+}
+
+.thepara{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 26px;
+}

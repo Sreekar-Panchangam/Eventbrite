@@ -1,0 +1,27 @@
+{% extends "events/event_base.html" %}
+
+{% block preevent %}
+<div class="container">
+  <h1>{{event.name}}</h1>
+  <h2> Likes Count: {{event.likes.count}}</h2>
+
+  <div class="content">
+  	{% if user in event.likes.all %}
+  		<a href="{% url 'events:unlike' slug=event.slug %}" class="btn btn-lg btn-warning"><span class="fa fa-heart"></span> UnLike</a>
+  	{% else %}
+  		<a href="{% url 'events:like' slug=event.slug %}" class="btn btn-lg btn-warning"><span class="fa fa-heart-o"></span> Like</a>
+  	{% endif %}
+
+  </div>
+</div>
+{% endblock %}
+
+{% block event_content %}
+
+<div class="col-md-8">
+  <p class="mb-1"><span class="fa fa-calendar"></span> {{ event.date }}</p>
+  <p class="mb-1"><span class="fa fa-clock-o"></span> {{ event.time }}</p>
+  <p class="mb-1"><span class="fa fa-map-marker"></span> {{ event.location }}</p>
+  <h4 class="mb-1">{{ event.description|safe }}</h4>
+</div>
+{% endblock %}
